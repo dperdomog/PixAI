@@ -38,3 +38,4 @@ next-env.d.ts
 # new additions
 dist/
 *.log
+LICENSE
