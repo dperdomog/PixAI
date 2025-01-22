@@ -1,0 +1,66 @@
+Documentación de la API PixAI
+=========================
+
+URL Base: http://localhost:3001/api/images
+
+1. Endpoint: /analyze
+-------------------
+Método: POST
+Descripción: Analiza una imagen de un personaje meme y proporciona información detallada sobre sus características.
+
+Payload:
+{
+    "image": "string (base64)",
+    "memeName": "string"
+}
+
+Respuesta:
+{
+    "name": "string",
+    "appearanceTraits": ["string"],
+    "possibleJokes": ["string"],
+    "personality": "string"
+}
+
+2. Endpoint: /chat
+----------------
+Método: POST
+Descripción: Permite mantener una conversación con el personaje meme analizado.
+
+Payload:
+{
+    "message": "string",
+    "description": "string",
+    "memeName": "string"
+}
+
+Respuesta:
+{
+    "message": "string"
+}
+
+Ejemplo de Uso (basado en testApi.ts)
+====================================
+
+1. Para analizar una imagen:
+```typescript
+const response = await axios.post(`${API_URL}/analyze`, {
+    image: base64Image,
+    memeName: "nombre_del_meme"
+});
+```
+
+2. Para chatear:
+```typescript
+const response = await axios.post(`${API_URL}/chat`, {
+    message: "tu_mensaje",
+    description: "descripcion_del_personaje",
+    memeName: "nombre_del_meme"
+});
+```
+
+Notas Importantes:
+- La imagen debe estar codificada en base64
+- Todos los campos son obligatorios en sus respectivos endpoints
+- La API utiliza GPT-4 para el análisis y la generación de respuestas
+- El servidor debe estar corriendo en el puerto 3001 

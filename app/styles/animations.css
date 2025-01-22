@@ -1,0 +1,41 @@
+.pixel-loading-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pixel-loading-bar {
+  width: 200px;
+  height: 20px;
+  background-color: #333;
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.pixel-loading-bar > div {
+  transition: width 0.1s linear;
+}
+
+.pixel-loading-percentage {
+  font-family: 'Press Start 2P', monospace;
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.pixel-message {
+  font-family: 'Press Start 2P', monospace;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.pixel-message.show {
+  opacity: 1;
+}
+

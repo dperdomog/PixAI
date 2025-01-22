@@ -4,6 +4,7 @@ import cors from 'cors';
 import imageRoutes from './routes/imageRoutes';
 import dotenv from 'dotenv';
 import path from 'path';
+//import bitqueryRoutes from './routes/bitqueryRoutes';
 
 // Load .env.local from root directory
 dotenv.config({ path: path.join(__dirname, '../../.env.local') });
@@ -42,6 +43,7 @@ app.use(cors(corsOptions));
 app.use(limiter);
 app.use(express.json({ limit: '50mb' }));
 app.use('/api/images', imageRoutes);
+//app.use('/api/bitquery', bitqueryRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
