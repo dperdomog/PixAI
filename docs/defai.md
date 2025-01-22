@@ -76,23 +76,6 @@ GET /api/defi/market/sentiment
    - On-chain metrics
    - Social sentiment analysis
 
-## Integration Timeline
-
-1. **Phase 1: Foundation** (Q2 2024)
-   - Basic blockchain data integration
-   - Token metrics implementation
-   - Initial smart contract interaction
-
-2. **Phase 2: Enhancement** (Q3 2024)
-   - Advanced DeFi features
-   - Multi-chain support
-   - Automated strategies
-
-3. **Phase 3: Full Launch** (Q4 2024)
-   - Complete DEFAI integration
-   - Advanced AI capabilities
-   - Cross-protocol optimization
-
 ## Getting Started (Preview)
 
 Developers can start preparing for DEFAI integration by:
