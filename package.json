@@ -1,0 +1,15 @@
+{
+  "name": "pixai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "app",
+    "api"
+  ],
+  "scripts": {
+    "web": "next dev",
+    "server": "cd api && ts-node-dev src/app.ts",
+    "build": "npm run build --workspaces",
+    "start": "npm run start --workspaces"
+  }
+}
