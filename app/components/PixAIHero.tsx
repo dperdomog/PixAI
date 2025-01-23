@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 export default function PixelHero() {
   const [copied, setCopied] = useState(false)
-  const contractAddress = 'So11111111111111111111111111111111111111112'
+  const contractAddress = '0000000000000000000000000000000000000'
 
   const copyToClipboard = async () => {
     try {
@@ -37,11 +37,11 @@ export default function PixelHero() {
       {/* Main content */}
       <div className="relative z-20 flex items-center justify-center h-full px-4">
         <div className="text-center space-y-4 sm:space-y-6 md:space-y-8">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white pixel-text-minimal glitch-hover" data-text="PixAI">
-            PixAI
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white pixel-text-minimal glitch-hover" data-text="PixelAI">
+            PixelAI
           </h1>
           <p className="text-base sm:text-lg text-white pixel-text-minimal mt-2 sm:mt-4 max-w-md mx-auto px-4">
-            The next generation meme interaction framework
+            The next generation meme interaction framework.
           </p>
           <Link 
             href="/game" 

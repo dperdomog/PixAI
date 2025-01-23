@@ -22,8 +22,8 @@ export default function Header() {
     <header className="bg-black text-white py-4">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-white text-xl pixel-text-minimal glitch-hover" data-text="PixAI">
-            PixAI
+          <Link href="/" className="text-white text-xl pixel-text-minimal glitch-hover" data-text="PixelAI">
+            PixelAI
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
